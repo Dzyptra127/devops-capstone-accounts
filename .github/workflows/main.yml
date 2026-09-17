@@ -20,10 +20,10 @@ jobs:
 
       - name: Run tests with coverage
         run: |
-          nosetests --with-coverage --cover-package=accounts || true
+          nosetests --with-coverage --cover-package=accounts
 
       - name: Lint with Flake8
-        run: flake8 . || true
+        run: flake8 .
 
       - name: Lint with Pylint
-        run: pylint accounts/ || true
+        run: pylint accounts/
